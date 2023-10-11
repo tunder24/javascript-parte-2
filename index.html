@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sebajavascript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <form action="fomulariopass">
+
+        <h3>ingrese clave</h3>
+        <input type="password" id="clave1">
+        <br> 
+        <h6>Repita la clave:</h6>
+        <input type="password" id="clave2">
+        <br>
+        <input type="button" value="Verificar clave" onclick="verificar()">
+
+
+    </form>
+
+    <h1>SELEC</h1>
+
+    <form>
+        <p>Pizzas:</p>
+        <p><select id="pizza" onChange="mostrarSeleccionPizza()">
+                <option value="180">Jamon y Queso</option>
+                <option value="150">Muzzarella</option>
+                <option value="170">Morrones</option>
+            </select></p>
+        <p><input type="text" id="mensaje"></p>
+    </form>
+
+
+    <h1>Check Box</h1>
+
+    <form>
+        Seleccione los deportes que practica:<br>
+        <input type="checkbox" id="checkbox1">Fútbol<br>
+        <input type="checkbox" id="checkbox2">Básquet<br>
+        <input type="checkbox" id="checkbox3">Tenis<br>
+        <input type="button" value="Controlar" onClick="verificar()">
+    </form>
+
+    <h1>Control radio</h1>
+    <form>
+        <p>¿Es mayor de edad?</p>
+        <p><input type="radio" id="radio1" name="edad">si</p>
+        <p><input type="radio" id="radio2" name="edad">no</p>
+        <p><input type="button" value="Verificar" onClick="verificar()"></p>
+    </form>
+    
+
+</body>
+</html>
